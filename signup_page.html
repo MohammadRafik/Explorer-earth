@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery.min.js" ></script>
+        <title>Explorer Earth (register)</title>
+        <script>
+            
+
+            $(document).ready(function(){
+                //this is to show red border and img of X or checkmark upon successsfully filling in a box
+//                $("input").focusout(function(){
+//                    var fullname = $("#-fullname").val();
+//                    var emailaddress = $("#-emailaddress").val();
+//                    var username = $("#-username").val();
+//                    var pass = $("#-pass").val();
+//                    var pass2 = $("#-pass2").val();
+//                    $.post("check_if_input_is_correct.php", {
+//                       fullname: fullname,
+//                       emailaddress: emailaddress,
+//                       username: username,
+//                       pass: pass,
+//                       pass2: pass2
+//                    });
+//                });
+                
+                //check if inputs are valid then create account if so
+                $("form").submit(function(event){
+                    event.preventDefault();
+                    var fullname = $("#-fullname").val();
+                    var emailaddress = $("#-emailaddress").val();
+                    var username = $("#-username").val();
+                    var pass = $("#-pass").val();
+                    var pass2 = $("#-pass2").val();
+                    var submit = $("#-button").val();
+                    $(".form-message").load("signup_page2.php", {
+                       fullname: fullname,
+                       emailaddress: emailaddress,
+                       username: username,
+                       pass: pass,
+                       pass2: pass2,
+                       submit: submit
+                    });
+                });
+            });
+            
+        </script>
+                <style>
+                    body {
+                        width:70%;
+                        text-align:center;
+                        margin:auto;
+                        background-color:rgb(248, 248, 248);
+                    }
+                    a {
+                        text-decoration: none;
+                        color:rgb(38, 76, 201);
+                    }
+                    a:hover{
+                        color:rgb(72, 108, 228);
+                    }
+                    p{
+                        display:inline;
+                    }
+                    
+                    input{
+                        margin:3px;
+                        padding:5px 60px 5px 10px;
+                        border:1px solid rgb(228, 228, 228);
+                    }
+
+                    img{
+                        margin:8px;
+                    }
+                    </style>
+    </head>
+    <body>
+            <br><br><br><br><br><br><br><br>
+
+        <form action="signup_page.php" method="POST">
+            <!-- <img src="images/exploring.jpg" alt="Explorer" height="250" ><br> -->
+            <h3>Sign up</h3>
+            <input id="-fullname" type="text" name="fullname" placeholder="Full Name"><br>
+            <input id="-emailaddress" type="text" name="emailaddress" placeholder="Email ex: jon@gmail.com"><br>
+            <input id="-username" type="text" name="username" placeholder="User Name"><br>
+            <input id="-pass" type="password" name="pass" placeholder="Password"><br>
+            <input id="-pass2" type="password" name="pass2" placeholder="Repeat Password"><br><br>
+            <p>By Signing up You agree to our <a href="ConditionsOfUse.php">Conditions of Use</a></p><br><br>
+            <button id="-button" type="submit" name="submit">Sign Up!</button><br><br>
+
+            <p class="form-message"></p>
+        </form>
+         
+        <p>Already have an account ?<a href="login.html"> Log in</a></p><br>
+        <p>Go back to the </p><a href="index.php"><p> Home Page</p></a>
+    </body>
+</html>
+

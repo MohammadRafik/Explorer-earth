@@ -1,0 +1,50 @@
+        body{
+            margin:0;
+            padding:0;
+        }
+        
+        .head{
+            background-color:white;
+            color:black;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .head img{
+            width:15%;
+            padding-left:40px;
+        }
+        
+        .head a{
+            text-decoration:none;
+            color:black;
+            
+        }
+ul{
+    
+    list-style-type:none;
+    margin:1px;
+    padding:0;
+    max-width:150px;
+    background-color:lightgrey;
+    position:relative;
+    top:-33px;
+    
+}
+
+li{
+    border:1px solid black;
+    padding:5px 10px;
+    text-align:center;
+    max-height:25px;
+    
+}
+li:hover{background-color:skyblue;}
+
+
+li a{
+    text-decoration:none;
+    color:darkslategrey;
+    
+
+    
+}

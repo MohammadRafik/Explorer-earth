@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery.min.js" ></script>
+        <title>Login - Explorer Earth</title>
+        <script>
+        $(document).ready(function(){
+            $("form").submit(function(event){
+                event.preventDefault();
+                var email = $("#-emailaddresslogin").val();
+                var pass = $("#-passlogin").val();
+                var submit = $("#-buttonlogin").val();
+                $(".form-messagelogin").load("login.php", {
+                   emailaddress: email,
+                   pass: pass,
+                   submit: submit
+                });
+            });
+        });
+            
+        </script>
+        <style>
+        body {
+            width:70%;
+            text-align:center;
+            margin:auto;
+            background-color:rgb(248, 248, 248);
+        }
+        a {
+            text-decoration: none;
+            color:rgb(38, 76, 201);
+        }
+        a:hover{
+            color:rgb(72, 108, 228);
+        }
+        p{
+            display:inline;
+        }
+
+        input{
+            margin:3px;
+            padding:5px 60px 5px 10px;
+            border:1px solid rgb(228, 228, 228);
+        }
+
+        </style>
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br><br>
+        <h3>Login</h3>
+        <form action="login.php" method="POST">
+            <input id="-emailaddresslogin" type="text" name="emailaddresslogin" placeholder="Email"><br>
+            <input id="-passlogin" type="password" name="passlogin" placeholder="Password"><br><br>
+            <button id="-buttonlogin" type="submit" name="submitlogin">Log in</button><br><br>
+            <p class="form-messagelogin"></p>
+        </form>
+        <p>Don't have an Account? <a href="signup_page.html">Sign Up!</a></p><br>
+        <p>Go back to the </p><a href="index.php"><p> Home Page</p></a>
+        
+    </body>
+</html>

@@ -1,0 +1,294 @@
+
+
+body
+{
+ padding:0px;
+
+    background-color:rgb(248, 248, 248);
+    width:70%;
+    margin:auto;
+
+}
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+ width:auto;
+}
+#drop-area
+{
+ margin-top:20px;
+ padding:100px;
+ width:80%;
+ height:auto;
+ background-color:rgb(248, 248, 248);
+ border:3px dashed grey;
+}
+.drop-text
+{
+ margin-top:70px;
+ color:grey;
+ font-size:25px;
+ font-weight:bold;
+ 
+}
+#drop-area img
+{
+ max-width:200px;
+}
+
+#table_one {
+    width:250px;
+}
+tr, td{
+    width:23%;
+    background-color:rgb(248, 248, 248);
+    text-align:left;
+    padding: 0px 5px 80px 5px;
+    vertical-align: top;
+}
+#abc:hover {
+    text-decoration: none;
+    color: #777777;
+
+}
+#abc:visited{
+
+}
+#abc{
+    float:left;
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+#abcCreator{
+float:left;
+color:rgb(184, 184, 184);
+text-decoration:none;
+}
+
+#abcCreator:hover {
+text-decoration:none;
+color:rgb(224, 224, 224);
+}
+
+.imgprofiles{
+    
+
+}
+
+#profileImage{
+    position:relative;
+
+
+}
+
+#profile{
+    padding: 50px 0px 40px 100px;
+}
+
+#displayName{
+    font-weight:bold;
+    display:inline;
+
+}
+
+#displayName2{
+    display:inline;
+    /* padding-left:5em; */
+
+}
+
+#table_TWO{
+width:300px;
+margin-left:20%;
+margin-top:100px;
+}
+#td1{
+padding-top:10px;
+}
+#td2{
+    width:23%;
+
+    text-align:left;
+    padding: 0px 5px 80px 5px;
+    vertical-align: top;
+}
+
+#halfbr{
+    line-height:1px;
+}
+
+#imgFileUpload{
+    border:4px solid rgb(212, 212, 212);
+    border-radius: 30%;
+}
+
+#postLink{
+    text-align:left;
+    float:right;
+    margin:8px 5px 0px 5px;
+    padding:10px 4px 10px 5px;
+    float: right;
+    color: rgb(109, 109, 109);
+
+    text-align: center;
+    font-size: 14px;
+    background-color:rgb(243, 243, 243);
+
+}
+
+
+.headerImageLinks{
+    padding: 10px 6px 0px 5px;
+    width:50px;
+    float:right;
+}
+
+.headerImageLinks{
+    padding: 10px 6px 0px 5px;
+    width:50px;
+    float:right;
+}
+
+  
+  #postLink:hover {
+    color: black;
+    text-decoration:none;
+    background-color: #f0f0f0;
+  }
+
+  .header{
+   background-color:rgb(248, 248, 248);
+   color:black;
+   box-shadow: 0px 24px 3px -24px rgb(180, 180, 180);
+   position: absolute;
+   right:-13.5%; 
+   left:-13.5%;
+   
+  }
+
+  .bottomBorder{
+    border-bottom: 1px solid #ccc;
+  }
+
+  #headerContainer{
+      display:flex;
+      justify-content: space-around;
+      width:70%;
+      margin-left:50%;
+      transform:translateX(-50%);
+  }
+
+  #item3{
+    float:right;
+}
+  #item2{
+      float:right;
+      padding:15px 15px 0px 15px;
+  }
+  #loginHeader{
+    padding:15px 15px 0px 15px;
+  }
+
+  #signupHeader{
+    padding:15px 15px 0px 15px;
+  }
+
+  textarea{
+      outline:none;
+      resize:none;
+      width:100%;
+      height:auto;
+  }
+
+#imgFileUpload4comments{
+    border-radius:100%;
+}
+
+
+  #makeAcommentTable{
+
+      width:60%;
+  }
+
+  #td_comment_image{
+
+    width:8%;
+  }
+
+
+  #td_comment_textarea{
+      padding-top:12px;
+
+    width:52%;
+  }
+
+  #commentSubmit{
+    float:right;
+} 
+
+
+ /* 
+    the body of the post has the images not in the middle, its off to the left side which doesnt look too good...
+    div.postDiv img{
+    max-width: 100%;
+    background-color:black;
+} */
+
+#boldText{
+    font-weight:bold;
+    font-size:15px;
+}
+
+#createApost{
+    padding-top:150px;
+}
+
+ul.indexul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left:5%;
+    overflow: hidden;
+    background-color:rgb(248, 248, 248);
+}
+
+li.indexli {
+    float: left;
+    padding:0;
+    margin:0;
+
+
+}
+
+li.indexli button {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    background-color:none;
+}
+
+ li.indexli:hover {
+    background-color: #f0f0f0;
+}
+
+#footerLinks{
+    margin:20px;
+}
+#footerLinksLast{
+    margin-top:20px;
+    margin-right:100px;
+    margin-bottom:20px;
+    margin-left:20px;
+}
+
+#copyrightMessage{
+    float:right;
+    margin:20px
+}
+

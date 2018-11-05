@@ -1,0 +1,47 @@
+<style>button{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        background-color:none;
+    }
+    </style>
+    
+    <script>
+        $(document).ready(function(){
+            $("#newestPosts").click(function(){
+                $("#container").load("php/showNewPosts.php");
+            });
+    
+            $("#FeaturedPosts").click(function(){
+                $("#container").load("php/showFeaturedPosts.php")
+            });
+    
+            $("#MostViewedPosts").click(function(){
+                $("#container").load("php/showMostViewedPosts.php")
+            });
+            $("#newestPosts").click();
+        });
+    
+    
+    
+    </script>
+    
+    <br><br><br><br>
+    <ul class="indexul">
+      <li class="indexli"><button type='button' id='newestPosts'>New</button></li>
+      <li class="indexli"><button type='button' id='FeaturedPosts'>Featured</button></li>
+      <li class="indexli"><button type='button' id="MostViewedPosts">Most Viewed</button></li>
+    
+    </ul>
+    <br><br><br>
+    <div id="container"></div>
