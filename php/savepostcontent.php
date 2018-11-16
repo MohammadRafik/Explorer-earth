@@ -3,7 +3,7 @@ require_once '../utilities/database_setup.php';
 require_once '../utilities/cookieAndsession.php';
 
 $title = $_POST['title'];
-$content = $_POST['Content'];
+$content = $_POST['content'];
 $creatorID = $_SESSION['user']['user_ID'];
 
 $queryGetPicture = "SELECT * FROM Images WHERE post_ID = ?";
