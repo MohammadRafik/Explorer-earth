@@ -74,7 +74,7 @@ $('#pic').change(function(){
     <b>Title</b>
     <input id="-title" type="text" class="form-control" name="title" autocomplete="off"><br>
     <b>Content</b>
-    <textarea id="summernote" name="Content"></textarea>
+    <textarea id="summernote" name="content"></textarea>
 
     <b>Thumbnail Image<br></b>
     <p>Note that this image will show up with the title of ur post to new visitors of the website</p>
