@@ -28,15 +28,15 @@ $('#pic').change(function(){
         });
     });
 
-                $("form").submit(function(event){
-                    event.preventDefault();
-                    var title = $("#-title").val();
-                    var content = $("#summernote").val();
-                    $(".form-message").load("php/savepostcontent.php", {
-                       title: title,
-                       Content: content
-                    });
-                });
+    $("form").submit(function(event){
+        event.preventDefault();
+        var title = $("#-title").val();
+        var content = $("#summernote").val();
+        $(".form-message").load("php/savepostcontent.php", {
+            title: title,
+            Content: content
+        });
+    });
 
 
 });
@@ -78,7 +78,7 @@ $('#pic').change(function(){
 
     <b>Thumbnail Image<br></b>
     <p>Note that this image will show up with the title of ur post to new visitors of the website</p>
-    <link href='css/upload_style.css?version=1' rel='stylesheet'>
+    <link href='CSS/upload_sstyle.css?version=1' rel='stylesheet'>
     <script type='text/javascript' src='js/upload_script.js'></script>
     <div id='wrapper'>
         <div id='drop-area'>
