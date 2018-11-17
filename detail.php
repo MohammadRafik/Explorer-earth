@@ -56,7 +56,14 @@ $query = "SELECT * FROM comments WHERE post_ID=? ORDER BY comment_ID DESC";
 $stmt = $eepdo->prepare($query);
 $stmt->execute(array($postID));
 
-$numOfComments = 10;
+//find number of comments
+$queryCommentNum = "SELECT COUNT(*) FROM comments WHERE post_ID=?";
+$stmtComment = $eepdo->prepare($queryCommentNum);
+$stmtComment->execute(array($postID));
+$commentNum = $stmtComment->fetch();
+
+$numOfComments = $commentNum[0];
+if ($numOfComments){
 for($i=0;$i<$numOfComments;$i++)
 {
 $comment = $stmt->fetch();
@@ -101,6 +108,10 @@ echo '</table>';
 
 
     
+}
+}
+else{
+    echo '<p>There are no comments, Be the first person to comment!</p>';
 }
 
 
