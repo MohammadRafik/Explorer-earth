@@ -1,5 +1,5 @@
 # ExplorerEarth
 The first website i've created.
-made it with PHP and jQuery.
+made it with PHP (WITHOUT a framework)
 
 
